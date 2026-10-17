@@ -7,7 +7,7 @@ import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary'
 import './App.css'
 
-// Public pages
+// Public pages to access
 import HomePage from './pages/Home/HomePage'
 import LoginPage from './pages/Member1_User/LoginPage/LoginPage'
 import RegisterPage from './pages/Member1_User/RegisterPage/RegisterPage'
