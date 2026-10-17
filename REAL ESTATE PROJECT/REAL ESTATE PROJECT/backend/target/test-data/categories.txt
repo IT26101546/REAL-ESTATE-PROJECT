@@ -1,0 +1,4 @@
+CAT-001|House|Standalone family houses, villas, and luxury residences|home|2026-10-10T09:31:48.707165600|2026-10-10T09:31:48.707165600
+CAT-002|Apartment|Modern luxury flats, studios, and high-rise condominiums|building|2026-10-10T09:31:48.708165400|2026-10-10T09:31:48.710164900
+CAT-003|Land|Residential plots, bare land, and agricultural properties|map-pin|2026-10-10T09:31:48.711166400|2026-10-10T09:31:48.711166400
+CAT-004|Commercial Property|Office buildings, retail stores, and commercial spaces|briefcase|2026-10-10T09:31:48.712167100|2026-10-10T09:31:48.713166900

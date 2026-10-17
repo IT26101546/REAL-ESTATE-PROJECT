@@ -1,0 +1,2 @@
+REV-001|PROP-001|USR-B01|Anura Fernando|5|hi wonderfull|2026-10-09T13:11:17.724239900|2026-10-11T12:49:41.191347400
+REV-002|PROP-002|USR-B02|Nimali Jayawardena|4|Stunning view of the ocean, very convenient access to supermarkets and restaurants.|2026-10-09T13:11:17.724239900|2026-10-09T13:11:17.724239900
