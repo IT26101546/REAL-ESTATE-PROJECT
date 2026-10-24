@@ -1,0 +1,132 @@
+.my-properties-page {
+  padding-bottom: 5rem;
+}
+
+.my-properties-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.add-property-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+}
+
+/* ── Stats Row ───────────────────────────────────────────── */
+.my-properties-stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-chip {
+  background: var(--card-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.stat-chip:hover {
+  border-color: rgba(96, 61, 40, 0.3);
+  transform: translateY(-2px);
+}
+
+.stat-chip strong {
+  color: var(--primary-accent);
+  font-weight: 800;
+  margin-left: 0.25rem;
+}
+
+/* ── Table Wrapper ───────────────────────────────────────── */
+.my-properties-table-wrapper {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  overflow-x: auto;
+  box-shadow: var(--shadow-md);
+}
+
+.my-properties-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.my-properties-table th {
+  background: rgba(213, 189, 161, 0.4);
+  padding: 1.1rem 1.25rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--card-border);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+}
+
+.my-properties-table td {
+  padding: 1.1rem 1.25rem;
+  border-bottom: 1px solid rgba(213, 189, 161, 0.55);
+  vertical-align: middle;
+}
+
+.my-properties-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.my-properties-table tbody tr:hover {
+  background-color: rgba(213, 189, 161, 0.2);
+}
+
+.property-title-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-weight: 600;
+}
+
+.property-location-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.property-price-cell {
+  font-weight: 800;
+  color: var(--primary-accent);
+}
+
+.actions-cell-flex {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.actions-cell-flex .btn-sm {
+  padding: 0.4rem 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .my-properties-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
