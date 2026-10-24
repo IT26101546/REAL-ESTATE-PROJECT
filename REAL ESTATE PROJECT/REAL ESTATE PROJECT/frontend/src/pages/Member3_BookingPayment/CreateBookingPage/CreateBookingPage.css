@@ -1,0 +1,145 @@
+.create-booking-page {
+  padding-bottom: 5rem;
+}
+
+.create-booking-container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.create-booking-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.create-booking-title {
+  font-size: 2.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.booking-compact-summary {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.booking-summary-property-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+  color: var(--text-primary);
+}
+
+.booking-summary-property-location {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0 0 1rem;
+}
+
+.booking-fee-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  background: rgba(96, 61, 40, 0.05);
+  border: 1px solid rgba(96, 61, 40, 0.15);
+  border-radius: 14px;
+  padding: 1.15rem 1.35rem;
+}
+
+.fee-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fee-label {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+.fee-subtext {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.fee-val-price {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.fee-divider {
+  height: 1px;
+  background: rgba(96, 61, 40, 0.15);
+}
+
+.fee-item.highlight-fee .fee-label {
+  color: var(--primary-accent);
+}
+
+.fee-val-deposit {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--primary-accent);
+}
+
+.autofill-buyer-info {
+  background: rgba(213, 189, 161, 0.15);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.section-small-title {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+}
+
+.buyer-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 540px) {
+  .buyer-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-label-sub {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.autofill-value {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.booking-form {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 1.75rem;
+  box-shadow: var(--shadow-md);
+}
