@@ -1,2 +1,0 @@
-REV-001|PROP-001|USR-B01|Anura Fernando|5|Breathtaking property and peaceful neighborhood! The builder used high-grade materials throughout.|2026-10-10T09:31:48.958365|2026-10-10T09:31:48.958365
-REV-002|PROP-002|USR-B02|Nimali Jayawardena|4|Stunning view of the ocean, very convenient access to supermarkets and restaurants.|2026-10-10T09:31:48.959364400|2026-10-10T09:31:48.959364400

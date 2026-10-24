@@ -1,0 +1,89 @@
+# =============================================================================
+# ENVIRONMENT & LOCAL SECRETS
+# =============================================================================
+.env
+.env.local
+.env.*.local
+*.env
+!*.env.example
+!.env.example
+
+# =============================================================================
+# JAVA & MAVEN BUILD ARTIFACTS
+# =============================================================================
+target/
+**/target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.log
+backend/target/
+backend/target/**
+
+# Test output and temporary runtime data
+backend/data/*.bak
+backend/data/*.tmp
+backend/target/test-data/
+*.bak
+
+# =============================================================================
+# NODE.JS & FRONTEND (REACT / VITE)
+# =============================================================================
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =============================================================================
+# IDE & CODE EDITORS
+# =============================================================================
+# JetBrains (IntelliJ, etc.)
+.idea/
+**/.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Visual Studio Code
+.vscode/
+**/.vscode/
+*.code-workspace
+
+# Eclipse / NetBeans
+.project
+.classpath
+.settings/
+bin/
+
+# =============================================================================
+# OPERATING SYSTEM SPECIFIC FILES
+# =============================================================================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# =============================================================================
+# TEMPORARY & CRASH LOGS
+# =============================================================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
