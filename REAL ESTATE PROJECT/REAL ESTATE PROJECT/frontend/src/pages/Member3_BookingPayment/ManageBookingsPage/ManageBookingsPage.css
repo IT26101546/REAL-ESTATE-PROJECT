@@ -1,0 +1,61 @@
+.manage-bookings-page {
+  padding-bottom: 5rem;
+}
+
+.manage-bookings-header {
+  margin-bottom: 2rem;
+}
+
+.bookings-table-wrapper {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  overflow-x: auto;
+  box-shadow: var(--shadow-md);
+}
+
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.bookings-table th {
+  background: rgba(213, 189, 161, 0.4);
+  padding: 1.1rem 1.25rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--card-border);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+}
+
+.bookings-table td {
+  padding: 1.1rem 1.25rem;
+  border-bottom: 1px solid rgba(213, 189, 161, 0.55);
+  vertical-align: middle;
+}
+
+.bookings-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.bookings-table tbody tr:hover {
+  background-color: rgba(213, 189, 161, 0.2);
+}
+
+.booking-actions-cell {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.booking-actions-cell .btn-sm {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.82rem;
+}
