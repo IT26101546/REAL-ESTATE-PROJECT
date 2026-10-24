@@ -1,6 +1,9 @@
 // Base API client with JWT token injection and error handling
 
-const API_BASE_URL = '/api';
+// In development the Vite proxy keeps this as `/api`. Set VITE_API_BASE_URL
+// (for example, https://api.example.com/api) when deploying the frontend
+// separately from the Spring Boot application.
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
 
 export async function request(endpoint, options = {}) {
   const token = localStorage.getItem('token');

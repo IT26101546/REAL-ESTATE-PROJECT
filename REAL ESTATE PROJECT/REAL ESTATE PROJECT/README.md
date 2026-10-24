@@ -17,7 +17,8 @@ A full-stack web application for listing, searching, booking, and reviewing real
 |-------|-----------|
 | Backend | Java 21, Spring Boot 3.3.4, Maven |
 | Frontend | React 18, Vite 5, JSX, CSS |
-| Storage | Plain text files (pipe-delimited) in `backend/data/` |
+| Active storage | Plain text files (pipe-delimited) in `backend/data/` |
+| MySQL schema contract | `database/mysql-schema.sql` (MySQL 8+) |
 | Security | BCrypt passwords, JWT authentication |
 | API style | REST — JSON over HTTP |
 
@@ -94,7 +95,7 @@ REAL ESTATE PROJECT/
 Open PowerShell and run:
 
 ```powershell
-cd "c:\Users\skfam\OneDrive\Desktop\REAL ESTATE PROJECT\backend"
+cd "<repository>\REAL ESTATE PROJECT\REAL ESTATE PROJECT\backend"
 $env:JAVA_HOME = "C:\Program Files\Java\jdk-21"
 & "C:\Users\skfam\maven\apache-maven-3.9.9\bin\mvn.cmd" spring-boot:run
 ```
@@ -109,12 +110,25 @@ Data files are auto-created in `backend/data/` on first run with sample data.
 Open a **second** PowerShell window:
 
 ```powershell
-cd "c:\Users\skfam\OneDrive\Desktop\REAL ESTATE PROJECT\frontend"
+cd "<repository>\REAL ESTATE PROJECT\REAL ESTATE PROJECT\frontend"
 $env:Path = "C:\Program Files\nodejs;" + $env:Path
 & "C:\Program Files\nodejs\npm.cmd" run dev
 ```
 
 The frontend starts on **http://localhost:5173**.
+
+### MySQL database contract
+
+Run `database/mysql-schema.sql` in MySQL 8+ to create the normalized tables,
+foreign keys, indexes, and review-rating constraint for all six domains. Copy
+`backend/.env.example` to a local, uncommitted environment file and supply the
+database credentials when implementing/deploying the repository adapter.
+
+> **Current status:** the checked and tested Spring Boot repository adapter is
+> file-backed (`backend/data`). The schema is supplied so the team can migrate
+> without changing the frontend/API contracts. Do not describe the running
+> application as MySQL-backed until the repositories have been switched and
+> integration-tested against a real MySQL instance.
 
 ---
 
@@ -528,3 +542,6 @@ Each member should commit their own files:
 - Member 4: model/Inquiry, repository/InquiryRepository, service/InquiryService*, controller/InquiryController, pages/Member4_Inquiry/
 - Member 5: model/Category, repository/CategoryRepository, service/CategoryService* + AdminService*, controller/CategoryController + AdminController, pages/Member5_AdminCategory/
 - Member 6: model/Review, repository/ReviewRepository, service/ReviewService*, controller/ReviewController, pages/Member6_Review/
+
+For the complete ownership boundaries, shared-code rules, role contract, and
+payment-data safety requirements, see [`docs/MODULE_OWNERSHIP.md`](docs/MODULE_OWNERSHIP.md).
