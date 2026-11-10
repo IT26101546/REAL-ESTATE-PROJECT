@@ -1,0 +1,2 @@
+BKG-001|PROP-002|Oceanview 2BR Luxury Apartment|USR-B01|Anura Fernando|buyer1@realestate.com|USR-S01|2026-11-13|250.00|APPROVED|Requesting key handover for next Monday.|2026-11-10T12:01:10.237290|2026-11-10T12:01:10.237550100|UNPAID
+BKG-002|PROP-001|Luxury Modern Villa with Private Pool|USR-B02|Nimali Jayawardena|buyer2@realestate.com|USR-S01|2026-11-20|7000.00|CONFIRMED|Reservation deposit completed.|2026-11-10T12:01:10.243565400|2026-11-10T12:01:10.245380900|UNPAID
